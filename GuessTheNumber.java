@@ -1,4 +1,5 @@
-package codesoft;
+package Code_Soft;
+
 import java.util.Scanner;
 import java.util.Random;
 

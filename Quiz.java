@@ -1,4 +1,5 @@
-package codesoft;
+package Code_Soft;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -54,9 +55,15 @@ class Quiz {
 
     public static void main(String[] args) {
         Quiz quiz = new Quiz();
-        quiz.addQuestion("What is the capital of France?", new String[]{"Paris", "London", "Berlin", "Rome"}, 0);
-        quiz.addQuestion("Which is the largest planet in the Solar System?", new String[]{"Earth", "Jupiter", "Mars", "Venus"}, 1);
+        quiz.addQuestion(" JDK stands for", new String[]{"Java development kit", "Java deployment kit ", "JavaScript deployment kit", "None of these"}, 0);
+       
+        quiz.addQuestion("What is the entry point of a program in Java?", new String[]{"main class", "Last line of code", "The first line of code", "main() method"}, 3);
 
+        quiz.addQuestion("  Which class in Java is used to take input from the user?", new String[]{"Input", "Scanner ", "Applier", "None of these"}, 1);
+        
+        quiz.addQuestion(" Method used to take a string as input in Java?", new String[]{"next()", "nextLine() ", "Both A and B.", "None of these"}, 2);
+        
+        quiz.addQuestion("What is type casting in Java?", new String[]{"It is converting type of a variable from one type to another", "Casting variable to the class ", "Creating a new variable.", "All of these"}, 0);
         quiz.startQuiz();
         System.out.println("Your score: " + quiz.getScore() + "/" + quiz.questions.size());
     }
@@ -87,4 +94,6 @@ class Question {
 }
 
 
-}
+
+
+
